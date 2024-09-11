@@ -1,0 +1,309 @@
+@import '../node_modules/normalize.css/normalize.css';
+
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --very-peri-50: #f4f4fd;
+  --very-peri-100: #d7d9f8;
+  --very-peri-200: #c0c3ec;
+  --very-peri-300: #a9ade3;
+  --very-peri-400: #a2a6ed;
+  --very-peri-500: #8d92e9;
+  --very-peri-600: #767fd2;
+  --very-peri-700: #6a71b9;
+  --very-peri-800: #5f66aa;
+  --very-peri-900: #444c8e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--very-peri-300);
+}
+
+html,
+body {
+  font-size: 16px;
+  word-break: keep-all;
+  font-family: Pretendard-Regular, SUIT-Regular, -apple-system, BlinkMacSystemFont, Bazier Square,
+    Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  letter-spacing: -0.3px;
+  color: #222222;
+  padding-bottom: 2rem;
+  /* overflow: hidden; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+@media screen and (max-width: 960px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+body:before {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: var(--very-peri-500);
+  background: linear-gradient(to right, var(--very-peri-900), var(--very-peri-500));
+}
+
+section {
+  padding: 0 2rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+a {
+  color: var(--very-peri-900);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--very-peri-500);
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 4rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  h3 {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #333333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+ul > li {
+  position: relative;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+ul > li:before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: '•';
+  color: var(--very-peri-600);
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.period-mark {
+  color: var(--very-peri-600);
+}
+
+.big-paragraph {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 960px) {
+  .big-paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+.row {
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--very-peri-200);
+}
+
+@media screen and (max-width: 960px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.row-left {
+  flex-basis: 18rem;
+  padding-right: 1rem;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  height: fit-content;
+}
+
+@media screen and (max-width: 960px) {
+  .row-left {
+    flex-basis: 100%;
+    padding: 0.5rem 0 1rem 0;
+    background: #fff;
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    top: 10px;
+    margin-bottom: 1rem;
+    z-index: 9;
+  }
+}
+
+.row-right {
+  flex-grow: 1;
+}
+
+.other {
+  padding: 3rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.role {
+  display: block;
+}
+
+.project {
+  padding: 1.5rem 0;
+}
+
+.project:first-child {
+  padding-top: 0;
+}
+
+.time {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: var(--very-peri-300);
+  font-weight: 600;
+}
+
+code.tag {
+  background-color: var(--very-peri-500);
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  margin: 0.2rem 0;
+  border-radius: 3px;
+  font-weight: 800;
+  display: inline-block;
+  font-family: Pretendard-Regular;
+  letter-spacing: 0.05em;
+}
+
+code.inline-code {
+  background-color: #1b1f230d;
+  color: black;
+  font-size: 12px;
+  padding: 0.2rem 0.4rem;
+  margin: 0;
+  border-radius: 3px;
+  font-weight: 600;
+  display: inline-block;
+  white-space: break-spaces;
+  font-family: Pretendard-Regular;
+  vertical-align: top;
+  letter-spacing: 0.05em;
+}
+
+.color-very-peri-50 {
+  color: var(--very-peri-50);
+}
+.color-very-peri-100 {
+  color: var(--very-peri-100);
+}
+.color-very-peri-200 {
+  color: var(--very-peri-200);
+}
+.color-very-peri-300 {
+  color: var(--very-peri-300);
+}
+.color-very-peri-400 {
+  color: var(--very-peri-400);
+}
+.color-very-peri-500 {
+  color: var(--very-peri-500);
+}
+.color-very-peri-600 {
+  color: var(--very-peri-600);
+}
+.color-very-peri-700 {
+  color: var(--very-peri-700);
+}
+.color-very-peri-800 {
+  color: var(--very-peri-800);
+}
+.color-very-peri-900 {
+  color: var(--very-peri-900);
+}
+
+.subsection {
+  color: var(--very-peri-900);
+}
