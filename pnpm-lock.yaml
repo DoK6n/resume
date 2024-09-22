@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      normalize.css:
-        specifier: ^8.0.1
-        version: 8.0.1
     devDependencies:
       vite:
         specifier: ^5.4.1
@@ -254,9 +250,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  normalize.css@8.0.1:
-    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
-
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
 
@@ -455,8 +448,6 @@ snapshots:
     optional: true
 
   nanoid@3.3.7: {}
-
-  normalize.css@8.0.1: {}
 
   picocolors@1.1.0: {}
 
