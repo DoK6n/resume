@@ -29,6 +29,15 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <nav class="gnb" data-pdf="hidden">
+      <a
+        class="github-fork-ribbon right-top"
+        id="pdf-button"
+        data-ribbon="Download resume as PDF"
+        title="Download resume as PDF"
+        >Download resume as PDF</a
+      >
+    </nav>
     <div class="container">
       <section>
         <h1>
@@ -321,7 +330,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section data-section="contact">
         <h2>Contact<span class="period-mark">.</span></h2>
         <a href="https://github.com/DoK6n" target="_blank"><img src="icons/github.svg" /></a>
         <a href="https://www.linkedin.com/in/dok6n/" target="_blank"
@@ -329,5 +338,6 @@
         /></a>
       </section>
     </div>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>
