@@ -86,13 +86,14 @@ p {
   line-height: 1.4;
 }
 
-a {
-  color: var(--very-peri-900);
-  transition: color 0.3s ease;
+a.link {
+  color: var(--very-peri-600);
+  text-decoration: none;
 }
 
-a:hover {
-  color: var(--very-peri-500);
+a.link:hover {
+  color: var(--very-peri-400);
+  border-bottom: 2px solid var(--very-peri-400);
 }
 
 h1 {
