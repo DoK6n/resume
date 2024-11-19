@@ -3,16 +3,14 @@
 
 @font-face {
   font-family: 'SUIT-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
-    format('woff2');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
-    format('woff');
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -42,9 +40,9 @@ html,
 body {
   font-size: 16px;
   word-break: keep-all;
-  font-family: Pretendard-Regular, SUIT-Regular, -apple-system, BlinkMacSystemFont, Bazier Square,
-    Noto Sans KR, Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Pretendard-Regular, SUIT-Regular, -apple-system, BlinkMacSystemFont, Bazier Square, Noto Sans KR,
+    Segoe UI, Apple SD Gothic Neo, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
   letter-spacing: -0.3px;
   color: #222222;
   padding-bottom: 2rem;
@@ -314,4 +312,35 @@ code.inline-code {
 
 .subsection {
   color: var(--very-peri-900);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-link a {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  border-bottom: 2px solid transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link a:hover:nth-child(1) {
+  border-bottom: 2px solid transparent;
+}
+
+.contact-link a:hover:nth-child(2) {
+  color: var(--very-peri-500);
+  border-bottom: 2px solid var(--very-peri-500);
 }
